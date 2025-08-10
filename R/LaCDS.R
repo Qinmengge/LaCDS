@@ -1,4 +1,16 @@
-
+#' Fitting LaCDS model
+#'
+#' LaCDS employs a finite-mixture model structure within the context of the discrete failure time model and implements the expectation-maximization algorithm for efficient optimization.
+#'
+#' @param t a integer vector of the event time values starting from 1.
+#' @param ind a integer vector of the event indicator taking values 0 and 1 with 0 corresponding to censoring and 1 corresponding to event.
+#' @param X a numeric matrix of the covariates of interest.
+#' @param G a integer scalar of the maximum number of subgroups to be fitted.
+#' @param tol a numeric scalar of the model convergence criteria defined as the l2 norm of covariate estimates between iterations.
+#' @param max_iter a integer scalar of the maximum rounds of iterations.
+#' @param max_iter a integer scalar of the minimum rounds of iterations.
+#' @param alpha a numeric scalar of the step size control parameter.
+#' @return a list of fitted models corresponding to each g smaller or equal to G.
 LaCDS=function(t,ind,X,G=2,tol=0.0001,max_iter = 1000, min_iter=1,alpha=0.5){
   rst=list()
   AIC=c()
