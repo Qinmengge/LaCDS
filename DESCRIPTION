@@ -1,0 +1,16 @@
+Package: LaCDS
+Title: Fitting latent class discrete survival model
+Version: 1.0
+Author: Qinmengge Li
+Description: In survival analysis, accurate identification of latent classes is essential to effectively account for potential hidden population heterogeneity. In response to this challenge, we introduce the Latent Class Discrete Survival (LaCDS) model. LaCDS employs a finite-mixture model structure within the context of the discrete failure time model and implements the expectation-maximization algorithm for efficient optimization. 
+Depends: R (>= 3.3.0)
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8),
+         Matrix,
+         mvtnorm
+LinkingTo: 
+    cpp11,
+    Rcpp,
+    RcppEigen
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
