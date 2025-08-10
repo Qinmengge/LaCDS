@@ -8,7 +8,7 @@
 #' @param G a integer scalar of the maximum number of subgroups to be fitted.
 #' @param tol a numeric scalar of the model convergence criteria defined as the l2 norm of covariate estimates between iterations.
 #' @param max_iter a integer scalar of the maximum rounds of iterations.
-#' @param max_iter a integer scalar of the minimum rounds of iterations.
+#' @param min_iter a integer scalar of the minimum rounds of iterations.
 #' @param alpha a numeric scalar of the step size control parameter.
 #' @return a list of fitted models corresponding to each g smaller or equal to G.
 LaCDS=function(t,ind,X,G=2,tol=0.0001,max_iter = 1000, min_iter=1,alpha=0.5){

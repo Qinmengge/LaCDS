@@ -35,15 +35,23 @@ LaCDS(t,ind,X,G=2,tol=0.0001,max_iter = 1000, min_iter=1,alpha=0.5)
 
 ### Input parameters
 
-t: a integer vector of the event time values starting from 1. ind: a
-integer vector of the event indicator taking values 0 and 1 with 0
-corresponding to censoring and 1 corresponding to event. X: a numeric
-matrix of the covariates of interest. G: a integer scalar of the maximum
-number of subgroups to be fitted. tol: a numeric scalar of the model
-convergence criteria defined as the l2 norm of covariate estimates
-between iterations. max_iter: a integer scalar of the maximum rounds of
-iterations. min_iter: a integer scalar of the minimum rounds of
-iterations. alpha: a numeric scalar of the step size control parameter.
+t: a integer vector of the event time values starting from 1.
+
+ind: a integer vector of the event indicator taking values 0 and 1 with
+0 corresponding to censoring and 1 corresponding to event.
+
+X: a numeric matrix of the covariates of interest.
+
+G: a integer scalar of the maximum number of subgroups to be fitted.
+
+tol: a numeric scalar of the model convergence criteria defined as the
+l2 norm of covariate estimates between iterations.
+
+max_iter: a integer scalar of the maximum rounds of iterations.
+
+min_iter: a integer scalar of the minimum rounds of iterations.
+
+alpha: a numeric scalar of the step size control parameter.
 
 ### Output models
 
