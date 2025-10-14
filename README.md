@@ -21,7 +21,8 @@ You can install the development version of LaCDS from
 [GitHub](https://github.com/Qinmengge/LaCDS) with:
 
 ``` r
-install.packages("LaCDS")
+install.packages("devtools")
+install_github("Qinmengge/LaCDS")
 ```
 
 ## Example
